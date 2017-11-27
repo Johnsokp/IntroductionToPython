@@ -10,11 +10,11 @@ Also:
   -- ASSIGNING a VALUE to a NAME (VARIABLE).
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Kynon Johnson.
 """
 ########################################################################
 #
-# TODO: 1.
+# DONE: 1.
 #  (Yes, that means for YOU to DO things per these instructions:)
 #
 # On Line 13 above, replace  PUT_YOUR_OWN_NAME_HERE  with your OWN name.
@@ -29,7 +29,7 @@ import rosegraphics as rg
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   Allow this file to use the rosegraphics.py file by marking the src
 #   directory as a "Sources Root".  Do that by right clicking on the src folder,
 #   then selector  Mark Directory As --> Sources Root
@@ -50,7 +50,7 @@ import rosegraphics as rg
 #     TurtleWindow is in the   rg  (shorthand for rosegraphics) module.
 # ----------------------------------------------------------------------
 window = rg.TurtleWindow()
-window.delay(20)  # Bigger numbers mean slower animation.
+window.delay(30)  # Bigger numbers mean slower animation.
 
 # ----------------------------------------------------------------------
 # Makes (constructs) a   SimpleTurtle   object.
@@ -63,7 +63,8 @@ dave = rg.SimpleTurtle()
 dave.forward(100)
 dave.left(90)
 dave.forward(200)
-
+dave.left(45)
+dave.forward(150)
 # ----------------------------------------------------------------------
 # Construct a new turtle and ask it to do things.
 # ----------------------------------------------------------------------
@@ -72,12 +73,13 @@ matt.pen = rg.Pen('red', 30)
 matt.speed = 10  # Faster
 matt.backward(50)
 matt.left(90)
+matt.pen = rg.Pen('green', 20)
 matt.forward(50)
 
 
 ########################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Add a few more line of your own code above to make one of the
 #   existing Turtles move some more and/or have different
 #   characteristics.
@@ -91,7 +93,7 @@ matt.forward(50)
 
 ########################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   The code above  CONSTRUCTS  two SimpleTurtle objects and gives those objects NAMES:
 #       dave    matt
 #
@@ -110,9 +112,18 @@ matt.forward(50)
 #
 ########################################################################
 
+kynon = rg.SimpleTurtle('turtle')
+kynon.pen = rg.Pen('orange', 10)
+kynon.speed = 5  # Faster
+kynon.right(90)
+kynon.forward(150)
+kynon.left(135)
+kynon.forward(100)
+
+
 ########################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   Run one more time to be sure that all is still OK.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #
