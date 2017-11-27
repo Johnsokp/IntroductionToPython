@@ -51,7 +51,7 @@ print('Hello, World')
 
 ########################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Add another   print   statement below.
 #   It should print any string that you want (but keep it G-rated!)
 #   Test your code by re-running this module using either the right click
